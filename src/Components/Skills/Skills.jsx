@@ -10,7 +10,7 @@ import {
 import { SiJavascript } from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
 import "./Skills.css";
-import CSharp from "../../assets/cSharp_icon.png"
+import CSharp from "../../assets/CSharp_icon.png"
 
 const skills = [
   { name: "C#", level: 95, icon: <img src={CSharp} alt="C#" className="skill-icon" />, color: "#68217A" },
