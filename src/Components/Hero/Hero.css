@@ -1,0 +1,149 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #312e81 100%);
+  color: #f3f4f6;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* Text Section */
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title .highlight {
+  color: #60a5fa;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero-subtitle .accent {
+  color: #a5b4fc;
+  font-weight: 500;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.hero-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+.hero-contact {
+  background: linear-gradient(90deg, #4ade80, #22c55e); /* green accent for Get in Touch */
+}
+
+.hero-contact:hover {
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Social Icons */
+.hero-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  color: #f3f4f6;
+  font-size: 1.5rem;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 8px rgba(99, 102, 241, 0.6);
+}
+
+/* Image Section */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 350px; /* caps size on large screens */
+  aspect-ratio: 1 / 1; /* keeps it square */
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9ca3af;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+  transition: all 0.4s ease;
+  margin-top: 0; /* reset for small screens */
+  margin-left: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(99, 102, 241, 0.5);
+}

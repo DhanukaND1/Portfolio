@@ -1,0 +1,62 @@
+.about-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f3f4f6;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+/* Subtle glowing gradient background accent */
+.about-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.25), transparent 70%);
+  top: 20%;
+  right: 10%;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.about-content {
+  max-width: 800px;
+  z-index: 2;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #34d399, #14b8a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+.highlight {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-text {
+    font-size: 1.25rem;
+  }
+}
