@@ -51,7 +51,7 @@ const projectList = [
                   simple, responsive controls, colorful visuals, and immediate feedback for each interaction. 
                   This project helped me practice Unity’s 2D mechanics, event handling, and scoring systems 
                   while creating an engaging and interactive gameplay experience.`,
-    link: "https://play.unity.com/en/games/86bfdaf6-7561-4cd9-b7ac-aab9e753384a/clicky-crates"
+    link: "https://play.unity.com/en/games/973a43b5-e322-479f-aa98-1e7f26517dff/clicky-crates"
   },
   {
     id: 3,
