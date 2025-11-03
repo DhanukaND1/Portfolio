@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import './ProjectDetails.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import fruitflipVideo from "../../assets/fruit flip.mp4"
 
 import gemhunterVideo from "../../assets/gem hunter.mp4"
 import gemhunter1 from "../../assets/gemhunter1.png"
@@ -15,6 +14,13 @@ import clickycratesVideo from "../../assets/clicky crates.mp4"
 import clickcrates1 from "../../assets/project2.png"
 import clickcrates2 from "../../assets/clickycrates1.png"
 import clickcrates3 from "../../assets/clickycrates2.png"
+import clickcrates4 from "../../assets/clickycrates3.png"
+
+import fruitflipVideo from "../../assets/fruit flip.mp4"
+import fruitflip1 from "../../assets/fruitflip1.png"
+import fruitflip2 from "../../assets/fruitflip2.png"
+import fruitflip3 from "../../assets/fruitflip3.png"
+import fruitflip4 from "../../assets/fruitflip4.png"
 
 const projectList = [
   {
@@ -44,6 +50,7 @@ const projectList = [
       clickcrates1,
       clickcrates2,
       clickcrates3,
+      clickcrates4,
     ],
     description: `A fast-paced 2D clicking game where crates appear randomly on the screen, 
                   and the player must click them to earn points before they disappear. Each level increases 
@@ -59,9 +66,10 @@ const projectList = [
     type: "2D",
     media: [
       fruitflipVideo,
-      "/projects/adventure1.png",
-      "/projects/adventure2.png",
-      "/projects/adventure2.png",
+      fruitflip1,
+      fruitflip2,
+      fruitflip3,
+      fruitflip4,
     ],
     description: `A simple and colorful 2D memory-matching game designed to test focus and recall. 
                   The player flips cards on the board to uncover fruits, trying to find matching pairs within the 
