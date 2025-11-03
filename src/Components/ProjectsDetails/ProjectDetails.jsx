@@ -39,7 +39,7 @@ const projectList = [
                   fundamentals of 3D game development, including object interaction, collision detection, 
                   lighting, and camera control. It was a great starting point for understanding Unity’s 
                   3D workflow and gameplay mechanics.`,
-    link: "https://play.unity.com/en/games/86bfdaf6-7561-4cd9-b7ac-aab9e753384a/clicky-crates"
+    link: "https://play.unity.com/en/games/e4f79414-5508-442f-8aae-21ffc80f6cc1/gem-hunter"
   },
   {
     id: 2,
