@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./About.css";
+import cvFile from "../../assets/Dhanuka Nadiranga.pdf";
 
 const About = () => {
   return (
@@ -19,6 +20,13 @@ const About = () => {
           creative concepts into playable worlds. My goal is to grow as a developer who blends logic,
           artistry, and innovation to make meaningful games.
         </p>
+        <a 
+          href={cvFile} 
+          download 
+          className="download-btn"
+        >
+          Download CV
+        </a>
       </motion.div>
 
       <motion.div

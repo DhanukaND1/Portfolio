@@ -11,6 +11,33 @@
   height: 100vh;
 }
 
+.download-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2rem;
+  font-family: "Liter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ecfdf5;
+  background: linear-gradient(90deg, #34d399, #14b8a6);
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(52, 211, 153, 0.25);
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 24px rgba(52, 211, 153, 0.45);
+}
+
+.download-btn:active {
+  transform: translateY(0px);
+}
+
+
 /* Subtle glowing gradient background accent */
 .about-glow {
   position: absolute;
@@ -50,13 +77,75 @@
   font-weight: 600;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
+
+/* Mobile adjustments for screens below 600px */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 4rem 1.5rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
   .about-title {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .about-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .download-btn {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+
+  .about-glow {
+    width: 260px;
+    height: 260px;
+    top: auto;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    filter: blur(80px);
   }
 }
+
+/* Slightly larger mobile and small tablets 600px–768px */
+@media (max-width: 768px) and (min-width: 601px) {
+  .about-section {
+    padding: 5rem 2rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .about-title {
+    font-size: 2.3rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+
+  .download-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  .about-glow {
+    width: 300px;
+    height: 300px;
+    right: 15%;
+    top: 30%;
+    filter: blur(90px);
+  }
+}
+
