@@ -22,7 +22,7 @@ const About = () => {
         </p>
         <a 
           href={cvFile} 
-          download 
+          download="Dhanuka Nadiranga.pdf"
           className="download-btn"
         >
           Download CV
