@@ -60,6 +60,7 @@
   object-fit: contain;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   min-height: 300px;
 }
 
 .carousel-media:hover {
