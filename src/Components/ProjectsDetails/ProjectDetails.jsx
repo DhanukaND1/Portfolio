@@ -108,6 +108,12 @@ const ProjectDetails = () => {
     arrows: true,
   };
 
+  const handleVideoLoaded = () => {
+    if (sliderRef.current) {
+      window.dispatchEvent(new Event("resize"));
+    }
+  };
+
   return (
     <motion.section
       className="project-details"
@@ -144,6 +150,7 @@ const ProjectDetails = () => {
                 controls
                 className="carousel-media"
                 preload="metadata"
+                onLoadedData={handleVideoLoaded}
               >
                 <source src={item} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -154,6 +161,7 @@ const ProjectDetails = () => {
                 src={item}
                 alt={`${project.title} screenshot ${index + 1}`}
                 className="carousel-media"
+                onLoad={handleVideoLoaded}
               />
             )
           )}
