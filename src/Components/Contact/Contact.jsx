@@ -8,12 +8,16 @@ import "./Contact.css";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+   const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
     const handleSubmit = (e) => {
     e.preventDefault();
+    if(isSending)return;
+
+    setIsSending(true);
 
     // Send email using EmailJS
     send(
@@ -41,6 +45,7 @@ const Contact = () => {
           },
         });
         setForm({ name: "", email: "", message: "" });
+        setIsSending(false);
       })
       .catch((err) => {
          toast.error("Failed to send message. Please try again.", {
@@ -55,6 +60,7 @@ const Contact = () => {
           },
         });
         console.error(err);
+        setIsSending(false);
       });
   };
 
@@ -124,13 +130,20 @@ const Contact = () => {
         </div>
 
         <motion.button
-            type="submit"
-            className="form-button"
-            style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          type="submit"
+          className={`form-button ${isSending ? "sending" : ""}`}
+          disabled={isSending}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.5rem",
+            cursor: isSending ? "not-allowed" : "pointer",
+          }}
+          whileHover={!isSending ? { scale: 1.05 } : {}}
+          whileTap={!isSending ? { scale: 0.95 } : {}}
         >
-          Send Message <FiSend />
+          {isSending ? "Sending..." : "Send Message"} {!isSending && <FiSend />}
         </motion.button>
       </motion.form>
 

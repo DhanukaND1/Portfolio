@@ -101,6 +101,12 @@
   box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
 }
 
+.form-button.sending {
+  background: #9ca3af !important;   /* override gradient */
+  box-shadow: none;
+  transform: none;
+}
+
 /* Info cards */
 .contact-info {
   margin-top: 3rem;
