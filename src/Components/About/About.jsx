@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import "./About.css";
-import cvFile from "../../assets/Dhanuka Nadiranga.pdf";
+import cvFile from "../../assets/Dhanuka Nadiranga CV.pdf";
 
 const About = () => {
   return (
