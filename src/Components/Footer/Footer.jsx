@@ -27,7 +27,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-icons">
           <a
-            href="https://github.com/DhanukaND1"
+            href="https://github.com/DhanukaND"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-icon"

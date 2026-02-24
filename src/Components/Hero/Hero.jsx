@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
 
           <div className="hero-social">
-            <a href="https://github.com/DhanukaND1" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/DhanukaND" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub size={24} />
             </a>
             <a href="https://www.linkedin.com/in/dhanuka-nadiranga-a7b490356/" target="_blank" rel="noopener noreferrer" className="social-icon">
