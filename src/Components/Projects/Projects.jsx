@@ -4,12 +4,16 @@ import { motion } from "framer-motion";
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/project2.png";
 import project3 from "../../assets/project3.png";
+import project4 from "../../assets/project3.png";
+import project5 from "../../assets/project3.png";
 import "./Projects.css";
 
 const projectList = [
   { id: 1, title: "Gem Hunter", type: "3D", image: project1 },
   { id: 2, title: "Clicky Crates", type: "2D", image: project2 },
   { id: 3, title: "Fruit Flip", type: "2D", image: project3 },
+  { id: 4, title: "Train Operator", type: "3D", image: project4 },
+  { id: 5, title: "Word Puzzle", type: "2D", image: project5 },
 ];
 
 const categories = ["All", "2D", "3D"];
