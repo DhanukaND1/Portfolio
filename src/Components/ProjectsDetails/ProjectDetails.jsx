@@ -22,6 +22,12 @@ import fruitflip2 from "../../assets/fruitflip2.png"
 import fruitflip3 from "../../assets/fruitflip3.png"
 import fruitflip4 from "../../assets/fruitflip4.png"
 
+import trainSimVideo from "../../assets/Train_Simulator.mp4"
+import train1 from "../../assets/Train1"
+import train1 from "../../assets/Train2"
+import train1 from "../../assets/Train3"
+import train1 from "../../assets/Train4"
+
 const projectList = [
   {
     id: 1,
@@ -79,6 +85,25 @@ const projectList = [
                   This project strengthened my understanding of Unity’s 2D tools, sprite management, and C# scripting 
                   for game logic and UI interactions.`,
     link: "https://play.unity.com/en/games/a83c257f-f2f7-4761-a386-41373630cb47/fruit-flip",
+  },
+  {
+    id: 4,
+    title: "Train Operator",
+    type: "3D",
+    media: [
+      trainSimVideo,
+      train1,
+      train2,
+      train3,
+      train4,
+    ],
+    description: `A simple and engaging 3D train simulator game focused on basic train movement and control along a fixed track.
+                  The player operates the train by controlling its speed and direction, ensuring smooth travel through the environment.
+                  The gameplay emphasizes timing, control, and maintaining a steady ride rather than complex mechanics.
+                  The scene is designed to give a clear view of the track and surroundings, allowing the player to focus on navigation without distractions.
+                  Controls are straightforward and responsive, making the experience easy to understand and play.
+                  This project helped strengthen my understanding of Unity 3D development, including object movement, physics-based control, and implementing core gameplay logic using C#.`,
+    link: "https://play.unity.com/en/games/664bedcb-6fdb-469c-a874-6ccf6b177610/train-operator",
   },
 ];
 
