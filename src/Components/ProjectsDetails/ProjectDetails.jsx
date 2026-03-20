@@ -23,16 +23,16 @@ import fruitflip3 from "../../assets/fruitflip3.png"
 import fruitflip4 from "../../assets/fruitflip4.png"
 
 import trainSimVideo from "../../assets/Train_Simulator.mp4"
-import train1 from "../../assets/Train1"
-import train2 from "../../assets/Train2"
-import train3 from "../../assets/Train3"
-import train4 from "../../assets/Train4"
+import train1 from "../../assets/Train1.png"
+import train2 from "../../assets/Train2.png"
+import train3 from "../../assets/Train3.png"
+import train4 from "../../assets/Train4.png"
 
 import wordPuzzleVideo from "../../assets/Word_Puzzle.mp4"
-import word1 from "../../assets/Word1"
-import word2 from "../../assets/Word2"
-import word3 from "../../assets/Word3"
-import word4 from "../../assets/Word4"
+import word1 from "../../assets/Word1.png"
+import word2 from "../../assets/Word2.png"
+import word3 from "../../assets/Word3.png"
+import word4 from "../../assets/Word4.png"
 
 const projectList = [
   {

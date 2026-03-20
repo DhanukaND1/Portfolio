@@ -23,9 +23,10 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const filtered =
-    selected === "All"
-      ? projectList
-      : projectList.filter((p) => p.type === selected);
+  (selected === "All"
+    ? projectList
+    : projectList.filter((p) => p.type === selected)
+  ).slice().sort((a, b) => b.id - a.id);
 
   const handleCardClick = (id) => {
     navigate(`/project/${id}`);
