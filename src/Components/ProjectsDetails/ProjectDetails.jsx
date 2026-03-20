@@ -24,9 +24,15 @@ import fruitflip4 from "../../assets/fruitflip4.png"
 
 import trainSimVideo from "../../assets/Train_Simulator.mp4"
 import train1 from "../../assets/Train1"
-import train1 from "../../assets/Train2"
-import train1 from "../../assets/Train3"
-import train1 from "../../assets/Train4"
+import train2 from "../../assets/Train2"
+import train3 from "../../assets/Train3"
+import train4 from "../../assets/Train4"
+
+import wordPuzzleVideo from "../../assets/Word_Puzzle.mp4"
+import word1 from "../../assets/Word1"
+import word2 from "../../assets/Word2"
+import word3 from "../../assets/Word3"
+import word4 from "../../assets/Word4"
 
 const projectList = [
   {
@@ -104,6 +110,25 @@ const projectList = [
                   Controls are straightforward and responsive, making the experience easy to understand and play.
                   This project helped strengthen my understanding of Unity 3D development, including object movement, physics-based control, and implementing core gameplay logic using C#.`,
     link: "https://play.unity.com/en/games/664bedcb-6fdb-469c-a874-6ccf6b177610/train-operator",
+  },
+  {
+    id: 5,
+    title: "Word Puzzle",
+    type: "2D",
+    media: [
+      wordPuzzleVideo,
+      word1,
+      word2,
+      word3,
+      word4,
+    ],
+    description: `A simple and colorful 2D word puzzle game designed to challenge vocabulary and quick thinking.
+                  The player forms correct words by selecting letters on the board, aiming to complete each level with accuracy and minimal mistakes.
+                  Valid words are accepted and rewarded, while incorrect attempts provide immediate feedback to guide the player.
+                  The game features smooth interactions, responsive controls, and clear visual feedback to keep the experience engaging and easy to follow.
+                  Sound effects are used to highlight actions such as correct and incorrect inputs, adding to the overall feel without distraction.
+                  This project strengthened my understanding of Unity 2D development, including UI design, input handling, and implementing game logic using C#.`,
+    link: "https://play.unity.com/en/games/5a86d8de-d4fd-48ba-939d-49ff22280a87/word-puzzle",
   },
 ];
 
